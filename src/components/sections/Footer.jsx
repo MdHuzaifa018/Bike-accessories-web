@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { fadeUp } from '../../utils/animations'
 import { footerLinks } from '../../data/siteData'
+import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa'
 
 const socialLinks = [
   { name: 'Instagram', href: '#' },
@@ -99,6 +100,63 @@ export default function Footer() {
               <a href="#" className="text-xs text-text-muted hover:text-primary transition-colors">Privacy Policy</a>
               <a href="#" className="text-xs text-text-muted hover:text-primary transition-colors">Terms of Service</a>
               <a href="#" className="text-xs text-text-muted hover:text-primary transition-colors">Refund Policy</a>
+            </div>
+          </div>
+
+          {/* Developer Credit */}
+          <div className="border-t border-border mt-8 pt-6 flex flex-col items-center justify-center gap-3">
+            <p className="text-xs text-text-muted tracking-wide">
+              Designed & Developed by{' '}
+              <span className="relative group inline-block">
+                <a
+                  href="https://wa.me/918434890116"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-text hover:text-primary transition-colors duration-300"
+                >
+                  Md Huzaif Sheikh
+                </a>
+                <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 px-3 py-1.5 text-[10px] text-white bg-slate-900 dark:bg-slate-800 border border-border rounded-md opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 pointer-events-none whitespace-nowrap shadow-lg flex flex-col items-center z-50">
+                  Chat with Developer on WhatsApp
+                  <span className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-slate-900 dark:border-t-slate-800"></span>
+                </span>
+              </span>
+            </p>
+            <div className="flex items-center gap-5">
+              <a
+                href="https://github.com/MdHuzaifa018"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub Profile"
+                className="text-text-muted hover:text-primary transition-all duration-300 hover:-translate-y-0.5"
+              >
+                <FaGithub className="text-lg" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/huzaif-sheikh-6443a6330"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn Profile"
+                className="text-text-muted hover:text-primary transition-all duration-300 hover:-translate-y-0.5"
+              >
+                <FaLinkedin className="text-lg" />
+              </a>
+              <a
+                href="mailto:mdhuzaifsh786@gmail.com"
+                aria-label="Email Developer"
+                className="text-text-muted hover:text-primary transition-all duration-300 hover:-translate-y-0.5"
+              >
+                <FaEnvelope className="text-lg" />
+              </a>
+              <a
+                href="https://wa.me/918434890116"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp Developer"
+                className="text-text-muted hover:text-primary transition-all duration-300 hover:-translate-y-0.5"
+              >
+                <FaWhatsapp className="text-lg" />
+              </a>
             </div>
           </div>
         </motion.div>
